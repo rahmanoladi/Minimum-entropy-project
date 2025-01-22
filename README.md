@@ -12,6 +12,7 @@ python run_pretrained.py  --model vgg &nbsp;&nbsp; --criterion &nbsp; min_ent &n
 --base_1 &nbsp; 2.02 &nbsp;&nbsp; --base_2 &nbsp; 10.73  &nbsp;&nbsp; --loss_1_weight &nbsp; 0.839  &nbsp;&nbsp; --loss_2_weight &nbsp; 0.308
 
 **Example 2: Running our pre-trained Mix-Ent VGG model** 
+
 python run_pretrained.py  --model vgg &nbsp;&nbsp;  --criterion &nbsp; mix_ent_2 &nbsp;&nbsp;  --input_check_name   95.927_mix_ent_vgg_emnist_letters.pt \\ \
 --models_directory &nbsp; path/to/your/models_directory \\ \
 --base_1 &nbsp; 12.58 &nbsp;&nbsp;  --base_2 &nbsp; 12.45  &nbsp;&nbsp; --loss_1_weight &nbsp; 0.717 &nbsp;&nbsp; --loss_2_weight &nbsp; 0.943 
