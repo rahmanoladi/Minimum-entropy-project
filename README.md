@@ -9,7 +9,7 @@ The programs in this repo were written using Python 3.9.21, Pytorch 2.3.0, and t
 
 python run_pretrained.py  --model vgg  --criterion min_ent   --input_check_name   95.933_min_ent_vgg_emnist_letters.pt \\ \
 --models_directory path/to/your/models_directory \\ \
---base_1  2.02  --base_2  10.73  --loss_1_weight 0.839  --loss_2_weight 0.308
+--base_1 $~$ 2.02  --base_2  10.73  --loss_1_weight 0.839  --loss_2_weight 0.308
 
 **Example 2: Running our pre-trained Mix-Ent VGG model** 
 python run_pretrained.py  --model vgg  --criterion mix_ent_2   --input_check_name   95.927_mix_ent_vgg_emnist_letters.pt \\ \
