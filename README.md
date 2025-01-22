@@ -5,16 +5,11 @@ This project explores two novel loss functions for classification in deep learni
 The programs in this repo were written using Python 3.9.21, Pytorch 2.3.0, and torchvision 0.18.0. You should install the above packages in your environment before running the programs in this repo.
 
 # Sample Runs
-**Example 1: Running our pre-trained Mix-Ent VGG model** 
+**Example 1: Running our pre-trained Min-Ent VGG model** 
 
-python train_deeper_gcn.py  --use_gpu 1 --dataset FreeSolv --repitition 1 --epochs 200 \\ \
---use_path_info 0  --add_noise 0 --noise_factor 0.0  \\ \
---num-layers 1 --hidden_dim 1140  \\ \
---dropout 0.35  --weight_decay 7.2362e-13  --batch-size 6  --lr 0.0283 \\ \
---dir_to_save_model path/to/deeper_gcn_models
-
-python run_pretrained.py  --model vgg  --criterion min_ent   --input_check_name  95.933_min_ent_vgg_emnist_letters.pt \\ \
+python run_pretrained.py  --model vgg  --criterion min_ent   --input_check_name   95.933_min_ent_vgg_emnist_letters.pt \\ \
 --base_1  2.02  --base_2  10.73  --loss_1_weight 0.839  --loss_2_weight 0.308 \\ \
+--models_directory path/to/your/models_directory
  
 
 
