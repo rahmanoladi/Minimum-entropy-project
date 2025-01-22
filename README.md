@@ -7,8 +7,8 @@ The programs in this repo were written using Python 3.9.21, Pytorch 2.3.0, and t
 # Sample Runs
 **Example 1: Running our pre-trained Min-Ent VGG model** 
 
-python run_pretrained.py  --model vgg  --criterion min_ent   --input_check_name   95.933_min_ent_vgg_emnist_letters.pt \\ \
---models_directory path/to/your/models_directory \\ \
+python run_pretrained.py  --model vgg &nbsp;&nbsp; --criterion &nbsp; min_ent &nbsp;&nbsp; --input_check_name   &nbsp; 95.933_min_ent_vgg_emnist_letters.pt \\ \
+--models_directory &nbsp; path/to/your/models_directory \\ \
 --base_1 &nbsp; 2.02 &nbsp;&nbsp; --base_2 &nbsp; 10.73  &nbsp;&nbsp; --loss_1_weight &nbsp; 0.839  &nbsp;&nbsp; --loss_2_weight &nbsp; 0.308
 
 **Example 2: Running our pre-trained Mix-Ent VGG model** 
