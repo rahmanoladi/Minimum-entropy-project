@@ -12,3 +12,9 @@ python train_deeper_gcn.py  --use_gpu 1 --dataset FreeSolv --repitition 1 --epoc
 --num-layers 1 --hidden_dim 1140  \\ \
 --dropout 0.35  --weight_decay 7.2362e-13  --batch-size 6  --lr 0.0283 \\ \
 --dir_to_save_model path/to/deeper_gcn_models
+
+python run_pretrained.py  --model vgg  --criterion min_ent   --input_check_name  95.933_min_ent_vgg_emnist_letters.pt  \\ \
+   --base_1  2.02   --base_2  10.73 \\ \
+--loss_1_weight 0.839  --loss_2_weight 0.308   --criterion min_ent   --input_check_name  95.933_min_ent_vgg_emnist_letters.pt
+
+
